@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo - App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo - App</h1>
+    <button id="add">Add Task</button>
+    <button id="view">View Tasks</button>
+    <div id="input" hidden>
+        <label for="inputTitle">Title</label>
+        <input type="text" id="inputTitle" placeholder="Enter Title">
+        <label for="desc">Description</label>
+        <input type="text" id="desc" placeholder="Enter Description">
+        <button id="addToList">Add to list</button>
+        <p id="err"></p>
+    </div>
+    <div id="container">
+        <p id="title"></p>
+        <p id="description"></p>
+        <button id="delete" hidden>Delete</button>
+        <button id="update" hidden>Update</button>
+        <label id="check" hidden>Mark as Completed</label>
+        <input type="checkbox" id="check" hidden>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
